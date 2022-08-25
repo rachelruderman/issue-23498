@@ -4,6 +4,9 @@
         script.setAttribute('type', 'text/javascript');
         script.setAttribute('src', url);
         document.body.appendChild(script);
+
+        // visit new location
+        window.location='/cypress/fixtures/page2.html'
     }
 </script>
 
@@ -11,7 +14,7 @@
 <html>
 <body>
 
-<h1>The button Element</h1>
+<h1>Page 1</h1>
 
 <button type="button" onclick="getScript('./script-with-error.js')">Click Me!</button>
  
