@@ -1,0 +1,1 @@
+throw new Error('Error thrown from script loaded on button click')

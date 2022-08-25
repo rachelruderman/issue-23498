@@ -1,10 +1,19 @@
+<script type="text/javascript">
+    getScript=(url)=>{
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', url);
+        document.body.appendChild(script);
+    }
+</script>
+
 <!DOCTYPE html>
 <html>
 <body>
 
 <h1>The button Element</h1>
 
-<button type="button" onclick="alrt('Hello world!')">Click Me!</button>
+<button type="button" onclick="getScript('./script-with-error.js')">Click Me!</button>
  
 </body>
 </html>
